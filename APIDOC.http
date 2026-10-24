@@ -1,0 +1,39 @@
+#api call for listing
+
+###
+
+GET http://127.0.0.1:8000/book/
+Accept: application/json
+
+
+#api call for adding
+
+###
+
+POST http://127.0.0.1:8000/book/
+Content-Type: application/json
+
+{
+    "title":"Wings of Fire",
+    "author":"A.P.J. Abdul Kalam",
+    "price":299,
+    "page" :500,
+    "publication":"Universities Press"
+
+
+}
+
+#api call for details
+
+###
+
+GET http://127.0.0.1:8000/book/2/
+Accept: application/json
+
+
+
+#api call for delete
+
+###
+DELETE http://127.0.0.1:8000/book/2/
+Accept: application/json
